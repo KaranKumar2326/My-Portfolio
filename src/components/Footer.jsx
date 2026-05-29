@@ -60,26 +60,45 @@ function Footer() {
         </Col>
       </Row>
 
-      {/* Sponsor Card Row */}
+      {/* Sponsor Section */}
       <Row className="justify-content-center mt-4">
-        <Col md="6">
-          <div
+        <Col md="4" className="text-center">
+          <a
+            href="https://github.com/sponsors/KaranKumar2326"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
-              borderRadius: "12px",
-              overflow: "hidden",
+              textDecoration: "none",
             }}
           >
-            <iframe
-              src="https://github.com/sponsors/KaranKumar2326/card"
-              title="Sponsor KaranKumar2326"
-              height="225"
-              width="100%"
+            <div
               style={{
-                border: 0,
-                maxWidth: "100%",
+                background: "rgba(255,255,255,0.08)",
+                border: "1px solid rgba(255,255,255,0.15)",
+                borderRadius: "16px",
+                padding: "18px",
+                color: "white",
+                backdropFilter: "blur(10px)",
+                transition: "0.3s ease",
+                cursor: "pointer",
               }}
-            ></iframe>
-          </div>
+            >
+              <h5 style={{ marginBottom: "8px" }}>
+                ❤️ Support My Work
+              </h5>
+
+              <p
+                style={{
+                  margin: 0,
+                  fontSize: "14px",
+                  opacity: 0.8,
+                }}
+              >
+                Sponsor me on GitHub to support open-source
+                projects and development.
+              </p>
+            </div>
+          </a>
         </Col>
       </Row>
     </Container>
